@@ -46,6 +46,11 @@ def send_help(message):
 @bot.message_handler(func=lambda message: True)
 def check_rss(message):
     global rss_urls
+    global chat_ids
+    
+    new_chat_id = message.chat.id
+    if new_chat_id not in chat_ids:
+        chat_ids.append(new_chat_id)
     if not validate_rss_link(message.text):
         bot.reply_to(message, "Invalid RSS link, please try again. see: https://github.com/skittoo/upwork-telegram-bot")
     else:
