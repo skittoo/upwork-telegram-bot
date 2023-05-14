@@ -14,5 +14,5 @@ Telegram bot for getting new job posts on Upwork utilizing Upwork's rss links.
 
 1- In the main directory of the repo, make `.env` file. 
 
-2- Put the bot token in `.env` same format as `.env.example` file. see: [Link Text](./.env.example)
+2- Put the bot token in `.env` same format as `.env.example` file. see: [Example .env](./.env.example)
 
